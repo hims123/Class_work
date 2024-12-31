@@ -10,6 +10,7 @@ class Fdemo{
 		// TODO Auto-generated constructor stub
 		f1 = new File("file3.txt");
 		
+		
 		try {
 			f1.createNewFile();
 		} catch (IOException e) {
