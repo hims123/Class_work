@@ -35,7 +35,7 @@ public class GenericDemo2 {
 		
 		System.out.println(a1);
 		
-		Iterator<Student> i1 = a1.iterator();
+	/*	Iterator<Student> i1 = a1.iterator();
 		
 		while (i1.hasNext()) {
 			Student std = (Student) i1.next();
@@ -48,7 +48,16 @@ public class GenericDemo2 {
 			
 			
 		}
+	*/
 		
+		for (Student std : a1) {
+			
+			System.out.println("Student's Roll no is : "+std.getRoll_no());
+			System.out.println("Student's Name is : "+std.getName());
+			System.out.println("Student's City is : "+std.getCity());
+			System.out.println("Student's Degree is : "+std.getDegree());
+			System.out.println();
+		}
 	}
 
 }
