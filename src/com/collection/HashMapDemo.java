@@ -1,6 +1,9 @@
 package com.collection;
 
 import java.util.HashMap;
+import java.util.Iterator;
+import java.util.Map;
+import java.util.Set;
 
 public class HashMapDemo {
 
@@ -33,6 +36,25 @@ public class HashMapDemo {
 		System.out.println("now value is : "+h1);
 		System.out.println("now size is : "+h1.size());
 		
+		
+		Set s1 = h1.entrySet();
+		
+		Iterator i1 = s1.iterator();
+		
+	//	while (i1.hasNext()) {
+	//		System.out.println(i1.next());
+			
+	//	}
+		
+		while (i1.hasNext()) {
+			
+			Map.Entry me =(Map.Entry) i1.next();
+			
+			System.out.println("The key is : "+me.getKey());
+			System.out.println("The value is : "+me.getValue());
+		}
+		
+	
 		
 	}
 
