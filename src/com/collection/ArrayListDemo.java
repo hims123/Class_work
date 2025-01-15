@@ -1,6 +1,5 @@
 package com.collection;
 
-import java.lang.classfile.instruction.NewMultiArrayInstruction;
 import java.util.ArrayList;
 import java.util.Iterator;
 
@@ -10,6 +9,10 @@ public class ArrayListDemo {
 		// TODO Auto-generated method stub
 
 		ArrayList a1 = new ArrayList();
+		
+		int cap = a1.size();
+		
+		System.out.println("capacity : "+cap);
 		
 		System.out.println("default value is : "+a1);
 		System.out.println("default size is : "+a1.size());

@@ -10,6 +10,10 @@ public class DemoPeerToPeer {
 		// TODO Auto-generated method stub
 
 
+		int Integer = 2;
+		char String = 'I';
+		
+		
 	}
 
 }
